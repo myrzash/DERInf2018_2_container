@@ -1,6 +1,6 @@
-# informatics2018
+# Informatics 2018
 
-> ERC DER 2018
+> DER 2018 June container
 
 ## Build Setup
 
