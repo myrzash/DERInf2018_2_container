@@ -2,12 +2,12 @@
     <div>
         <vue-particles
                 class="particles"
-                color="#000"
+                color="#fff"
                 :particleOpacity="0.7"
                 :particlesNumber="80"
                 shapeType="circle"
-                :particleSize="2"
-                linesColor="#000"
+                :particleSize="3"
+                linesColor="#fff"
                 :linesWidth="1"
                 :lineLinked="false"
                 :lineOpacity="0.7"
@@ -19,7 +19,7 @@
                 clickMode="push"
         >
         </vue-particles>
-        <!--<div class="bg" id="background"></div>-->
+        <div id="background"></div>
         <div class="fg-resizable">
             <iframe src="der/index.html" frameborder="0" id="frame" seamless='seamless' scrolling='no'
                     allowtransparency='true'></iframe>
@@ -73,11 +73,6 @@
 </script>
 
 <style>
-
-    body {
-        background: #fff;
-    }
-
     .fg-resizable {
         position: fixed;
         z-index: 2;
@@ -106,5 +101,11 @@
         margin-left: -140px;
         left: 50%;
         top: 50%;
+    }
+    .particles{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
     }
 </style>
