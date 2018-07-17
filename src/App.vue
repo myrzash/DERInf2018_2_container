@@ -1,6 +1,25 @@
 <template>
     <div>
-        <div class="bg" id="background"></div>
+        <vue-particles
+                class="particles"
+                color="#000"
+                :particleOpacity="0.7"
+                :particlesNumber="80"
+                shapeType="circle"
+                :particleSize="2"
+                linesColor="#000"
+                :linesWidth="1"
+                :lineLinked="false"
+                :lineOpacity="0.7"
+                :linesDistance="150"
+                :moveSpeed="1"
+                :hoverEffect="true"
+                hoverMode="grab"
+                :clickEffect="true"
+                clickMode="push"
+        >
+        </vue-particles>
+        <!--<div class="bg" id="background"></div>-->
         <div class="fg-resizable">
             <iframe src="der/index.html" frameborder="0" id="frame" seamless='seamless' scrolling='no'
                     allowtransparency='true'></iframe>
@@ -56,7 +75,7 @@
 <style>
 
     body {
-        background: #333;
+        background: #fff;
     }
 
     .fg-resizable {
@@ -70,6 +89,7 @@
         margin-top: -600px;
         margin-left: -800px;
         overflow: hidden;
+        background-color: transparent;
     }
 
     #frame {
